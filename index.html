@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IPA Chart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+    function playAudio(url) {
+      new Audio(url).play();
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">IPA Chart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h1>Consonants</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Manner</th>
+          <th></th>
+          <th colspan="10" class="text-center">Place</th>
+        </tr>
+        <th></th>
+        <th></th>
+        <th scope="col">Bilabial</th>
+        <th scope="col">Labio-Dental</th>
+        <th scope="col">(Inter-)Dental</th>
+        <th scope="col">Alveolar</th>
+        <th scope="col">Postalveolar</th>
+        <th scope="col">Retroflex</th>
+        <th scope="col">Palatal</th>
+        <th scope="col">Velar</th>
+        <th scope="col">Labial-Velar</th>
+        <th scope="col">Glottal</th>
+        </tr>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Stops</th>
+          <th>Voiceless</th>
+          <td>p <input type="button" value="pot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/pot.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td>t <input type="button" value="tot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/tot.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>k <input type="button" value="cot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/cot.wav')">
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Voiced</th>
+          <td>b <input type="button" value="bot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bot.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td>d <input type="button" value="dot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/dot.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>g <input type="button" value="got"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/got.wav')">
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Fricatives</th>
+          <th>Voiceless</th>
+          <td></td>
+          <td>f <input type="button" value="font"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/font.wav')">
+          </td>
+          <td>θ <input type="button" value="thought"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/thought.wav')">
+          </td>
+          <td>s <input type="button" value="sot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/sot.wav')">
+          </td>
+          <td>ʃ <input type="button" value="shot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/shot.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>h <input type="button" value="hot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/hot.wav')">
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Voiced</th>
+          <td></td>
+          <td>v <input type="button" value="Vons"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/Vons.wav')">
+          </td>
+          <td>ð <input type="button" value="though"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/though.wav')">
+          </td>
+          <td>z <input type="button" value="zot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/zot.wav')">
+          </td>
+          <td>ʒ <input type="button" value="vision"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/vision.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Affricates</th>
+          <th>Voiceless</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+
+          <td>tʃ <input type="button" value="chalk"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/chalk.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Voiced</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>dʒ <input type="button" value="jot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/jot.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Nasals (Voiced)</th>
+          <th></th>
+          <td>m <input type="button" value="Mott"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/Mott.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td>n <input type="button" value="not"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/not.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>ŋ <input type="button" value="song"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/song.wav')">
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Approximants (Voiced)</th>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>ɹ <input type="button" value="rot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/rot.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td>j <input type="button" value="yacht"
+            onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/yacht.wav')">
+          </td>
+          <td></td>
+          <td>w <input type="button" value="watt"
+            onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/watt.wav')">
+        </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Lateral Approximants (Voiced)</th>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>l <input type="button" value="lot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/lot.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Tap (Voiced)</th>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>(ɾ) <input type="button" value="otter"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/otter.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+
+      </tbody>
+    </table>
+    <div class="row">
+    <div class="table-responsive col-md-6">
+      <h1>Vowels</h1>
+
+    <table class="table table-responsive-sm">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th colspan="2" class="text-center">Back</th>
+        </tr>
+        <th></th>
+        <th></th>
+        <th scope="col">Front (Unrounded)</th>
+        <th scope="col">Central (Unrounded)</th>
+        <th scope="col">Unrounded</th>
+        <th scope="col">Rounded</th>
+        </tr>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">High</th>
+          <th>Upper</th>
+          <td>i <input type="button" value="beat"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/beat.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td>u <input type="button" value="boot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/boot.wav')">
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <td></td>
+          <td>(ɨ) <input type="button" value="Rose's"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/Roses.wav')">
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Lower</th>
+          <td>ɪ <input type="button" value="bit"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bit.wav')">
+          </td>
+          <td></td>
+          <td></td>
+          <td>ʊ <input type="button" value="foot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/foot.wav')">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Mid</th>
+          <th>Upper</th>
+          <td>eɪ <input type="button" value="bait"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bait.wav')">
+          </td>
+          <td>ə <input type="button" value="about"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/about.wav')">
+          </td>
+          <td></td>
+          <td>oʊ <input type="button" value="boat"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/boat.wav')">
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Lower</th>
+          <td>ɛ <input type="button" value="bet"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bet.wav')">
+          </td>
+          <td></td>
+          <td>ʌ <input type="button" value="but"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/but.wav')">
+          </td>
+          <td>ɔ <input type="button" value="bought"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bought.wav')">
+          </td>
+        </tr>
+        <tr>
+          <th>Low</th>
+          <th></th>
+          <td>æ <input type="button" value="bat"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bat.wav')">
+          </td>
+          <td></td>
+          <td>ɑ <input type="button" value="bot"
+              onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bot.wav')">
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="table-responsive col-md-6">
+
+    <h1>Diphthongs</h1>
+
+    <table class="table table-responsive-sm">
+     <tr>
+      <td>eɪ <input type="button" value="bait"
+        onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bait.wav')">
+    </td>
+      <td></td>
+      <td>oʊ <input type="button" value="boat"
+        onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/boat.wav')">
+    </td>
+     </tr>
+     <tr>
+      <td>aɪ <input type="button" value="bite"
+        onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bite.wav')">
+    </td>
+      <td></td>
+      <td>aʊ  <input type="button" value="bout"
+        onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/bout.wav')">
+    </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td>ɔɪ  <input type="button" value="boy"
+        onclick="playAudio('https://linguistics.ucla.edu/people/hayes/103/Charts/English/boy.wav')">
+    </td>
+      <td></td>
+     </tr>
+    </table>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
